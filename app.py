@@ -139,7 +139,7 @@ if st.button("🔍 Analyze Contract"):
         st.write(translated_summary)
 
         st.subheader("⚠️ Clause-by-Clause Analysis")
-        risk_color = {"High": "#ffcccc", "Medium": "#fff2cc", "Low": "#e6ffed"}
+        risk_color = {"High": "#833939", "Medium": "#d17387", "Low": "#7ec191"}
         for i, c in enumerate(concise_clauses):
             with st.expander(f"Clause {i+1} (Risk: {c.get('risk','Medium')})", expanded=False):
                 st.markdown(
